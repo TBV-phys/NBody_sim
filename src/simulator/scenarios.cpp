@@ -18,14 +18,14 @@ std::vector<Obj> createThreeBody(double G)
     // P2
     p2.mass = 40;
     p2.radius = 0.1;
-    p2.colorRGB = {1.0, 0.0, 0.0};
+    p2.colorRGB = {.0, 1.0, 0.2};
     p2.pos = {1.0, 0.0};
     p2.vel = {0.0, 1.0};
 
     // P3
     p3.mass = 0.02;
     p3.radius = 0.05;
-    p3.colorRGB = {1.0, 0.0, 0.0};
+    p3.colorRGB = {1.0, 1.0, 1.0};
     p3.pos = {0.5, 0.0};
     p3.vel = {0.0, -0.2 + sqrt(G * p2.mass / 0.4)};
 

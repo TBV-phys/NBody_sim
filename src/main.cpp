@@ -15,11 +15,11 @@ int main(void)
     int winHeight = 800;
 
     float dt = 0.001;
-    double G = 0.0005;
+    double G = 0.25;
     
     
     Simulation sim(G, dt);
-    sim.init(random(G, 100));
+    sim.init(createThreeBody(G));
     
     double E_tot = sim.Ek + sim.Ep;
     
